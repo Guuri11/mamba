@@ -1,1 +1,7 @@
-{}
+{
+	"bootloader": {
+		"title": "Mamba",
+		"ready": "Listo",
+    "loading": "Arrancando sistema...\nCargando motor de visión..."
+	}
+}

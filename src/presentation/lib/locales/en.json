@@ -1,1 +1,7 @@
-{}
+{
+	"bootloader": {
+		"title": "Mamba",
+		"ready": "Ready",
+    "loading": "Starting system...\nLoading vision engine..."
+	}
+}
