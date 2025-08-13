@@ -28,4 +28,12 @@
             "search": "Search"
         }
 	}
+	,
+	"monthlyBudget": {
+		"title": "Monthly Budgets",
+		"loading": "Loading...",
+		"name": "Name",
+		"month": "Month",
+		"total": "Total"
+	}
 }

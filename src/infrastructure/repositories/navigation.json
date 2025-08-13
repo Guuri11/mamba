@@ -5,6 +5,10 @@
       "title": "Dashboard",
       "url": "/dashboard"
     },
+      {
+        "title": "Monthly Budget",
+        "url": "/monthly-budget"
+      },
     {
       "title": "Tasks",
       "url": "/tasks",

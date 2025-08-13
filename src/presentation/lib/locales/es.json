@@ -28,6 +28,14 @@
                 "search": "Buscar"
             }
 	}
+	,
+	"monthlyBudget": {
+		"title": "Presupuestos mensuales",
+		"loading": "Cargando...",
+		"name": "Nombre",
+		"month": "Mes",
+		"total": "Total"
+	}
 }
 
 
