@@ -1,8 +1,8 @@
 import * as React from "react";
 import { useTranslation } from "react-i18next";
 
-import { HexagonBackground } from "../../components/ui/shadcn-io/hexagon-background";
-import { TypingText } from "../../components/ui/shadcn-io/typing-text";
+import { HexagonBackground } from "./ui/shadcn-io/hexagon-background";
+import { TypingText } from "./ui/shadcn-io/typing-text";
 import { Progress } from "./ui/progress";
 
 const loadingMessagesKeys = ["bootloader.loading"];

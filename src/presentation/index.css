@@ -95,6 +95,7 @@
     --sidebar-primary: var(--mamba-900);
     --sidebar-primary-foreground: var(--mamba-50);
     --sidebar-ring: var(--gray-500);
+    --sidebar: hsl(0 0% 98%);
 }
 
 .dark {
@@ -139,6 +140,7 @@
     --sidebar-primary: var(--blue-700);
     --sidebar-primary-foreground: var(--base-white);
     --sidebar-ring: var(--blue-500);
+    --sidebar: hsl(240 5.9% 10%);
 }
 
 @theme inline {
