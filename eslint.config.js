@@ -8,6 +8,7 @@ import eslintPluginTypescript from "@typescript-eslint/eslint-plugin";
 import eslintPluginImport from "eslint-plugin-import";
 import eslintPluginSimpleImportSort from "eslint-plugin-simple-import-sort";
 import eslintPluginFilenames from "eslint-plugin-filenames";
+import eslintPluginBoundaries from "eslint-plugin-boundaries";
 
 // TODO: File name match regex
 export default tseslint.config(
@@ -27,11 +28,18 @@ export default tseslint.config(
             import: eslintPluginImport,
             "simple-import-sort": eslintPluginSimpleImportSort,
             filenames: eslintPluginFilenames,
+            boundaries: eslintPluginBoundaries,
         },
         settings: {
             react: {
                 version: "detect",
             },
+            "boundaries/elements": [
+                { type: "domain", pattern: "src/domain/**" },
+                { type: "application", pattern: "src/application/**" },
+                { type: "infrastructure", pattern: "src/infrastructure/**" },
+                { type: "presentation", pattern: "src/presentation/**" },
+            ],
         },
         rules: {
             ...reactHooks.configs.recommended.rules,
@@ -59,6 +67,24 @@ export default tseslint.config(
                 { selector: "import", format: null },
                 { selector: "parameter", trailingUnderscore: "allow", format: null },
                 { selector: "objectLiteralProperty", format: null },
+            ],
+            "boundaries/element-types": [
+                "error",
+                {
+                    default: "disallow",
+                    rules: [
+                        { from: "domain", allow: ["domain"] },
+                        { from: "application", allow: ["domain", "application"] },
+                        {
+                            from: "infrastructure",
+                            allow: ["domain", "application", "infrastructure"],
+                        },
+                        {
+                            from: "presentation",
+                            allow: ["domain", "application", "infrastructure", "presentation"],
+                        },
+                    ],
+                },
             ],
         },
     },

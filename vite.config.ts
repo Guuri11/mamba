@@ -1,18 +1,33 @@
 import tailwindcss from "@tailwindcss/vite";
+import tanstackRouter from "@tanstack/router-plugin/vite";
 import react from "@vitejs/plugin-react";
 import path from "path";
 import { defineConfig } from "vite";
 
-// @ts-expect-error process is a nodejs global
 const host = process.env.TAURI_DEV_HOST;
 
 // https://vitejs.dev/config/
 export default defineConfig(async () => ({
-    plugins: [react(), tailwindcss()],
+    plugins: [
+        // Please make sure that '@tanstack/router-plugin' is passed before '@vitejs/plugin-react'
+        tanstackRouter({
+            target: "react",
+            autoCodeSplitting: true,
+            routesDirectory: "./src/presentation/routes",
+            generatedRouteTree: "./src/presentation/routeTree.gen.ts",
+            routeFileIgnorePrefix: "-",
+            quoteStyle: "single",
+        }),
+        react(),
+        tailwindcss(),
+    ],
 
     resolve: {
         alias: {
-            "~": path.resolve(__dirname, "./src"),
+            "~": path.resolve(__dirname, "./src/presentation"),
+            "@domain": path.resolve(__dirname, "./src/domain"),
+            "@infrastructure": path.resolve(__dirname, "./src/infrastructure"),
+            "@application": path.resolve(__dirname, "./src/application"),
         },
     },
 

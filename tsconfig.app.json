@@ -9,10 +9,12 @@
 
         /* Resolve path -> https://ui.shadcn.com/docs/installation/vite*/
         "baseUrl": ".",
-        "paths": {
-            "~/*": ["./src/*"],
+       "paths": {
+            "~/*": ["./src/presentation/*"],
+            "@domain/*": ["./src/domain/*"],
+            "@infrastructure/*": ["./src/infrastructure/*"],
+            "@application/*": ["./src/application/*"]
         },
-
         /* Bundler mode */
         "moduleResolution": "bundler",
         "allowImportingTsExtensions": true,

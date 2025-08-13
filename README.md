@@ -12,6 +12,7 @@ Mamba es un asistente personal inteligente de escritorio, diseñado para ayudart
 - Comunicación eficiente entre frontend (TypeScript/React) y backend (Rust/Tauri)
 
 ---
+
 - Asistente personal inteligente con IA
 - Interfaz de usuario moderna basada en React y Tauri
 - Integración con flujos de trabajo y automatizaciones
@@ -19,7 +20,6 @@ Mamba es un asistente personal inteligente de escritorio, diseñado para ayudart
 - Comunicación eficiente entre frontend (TypeScript/React) y backend (Rust/Tauri)
 
 ---
-
 
 ## Recommended IDE Setup
 
