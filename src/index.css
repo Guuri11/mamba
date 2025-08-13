@@ -7,17 +7,17 @@
     /*== PRIMITIVES ==*/
     --base-black: #000000;
     --base-white: #ffffff;
-    --chenin-50: #fcfaee;
-    --chenin-100: #f7f3ce;
-    --chenin-200: #eee499;
-    --chenin-300: #e7d56d;
-    --chenin-400: #dfc140;
-    --chenin-500: #d7a529;
-    --chenin-600: #be8321;
-    --chenin-700: #9e611f;
-    --chenin-800: #814d1f;
-    --chenin-900: #6a401d;
-    --chenin-950: #3c210c;
+    --mamba-50: #fafafa;
+    --mamba-100: #f5f5f5;
+    --mamba-200: #e5e5e5;
+    --mamba-300: #d4d4d4;
+    --mamba-400: #a3a3a3;
+    --mamba-500: #737373;
+    --mamba-600: #525252;
+    --mamba-700: #404040;
+    --mamba-800: #262626;
+    --mamba-900: #171717;
+    --mamba-950: #0a0a0a;
 
     --gray-100: #f3f4f6;
     --gray-200: #e5e7eb;
@@ -56,28 +56,28 @@
     /*== THEME: light ==*/
 
     /* tokens */
-    --accent: var(--chenin-100);
-    --accent-foreground: var(--chenin-900);
+    --accent: var(--mamba-100);
+    --accent-foreground: var(--mamba-900);
     --background: var(--base-white);
-    --border: var(--chenin-200);
+    --border: var(--mamba-200);
     --card: var(--base-white);
-    --card-foreground: var(--chenin-950);
+    --card-foreground: var(--mamba-950);
     --destructive: var(--red-500);
-    --destructive-foreground: var(--chenin-50);
-    --foreground: var(--chenin-950);
-    --input: var(--chenin-200);
-    --muted: var(--chenin-100);
-    --muted-foreground: var(--chenin-500);
+    --destructive-foreground: var(--mamba-50);
+    --foreground: var(--mamba-950);
+    --input: var(--mamba-200);
+    --muted: var(--mamba-100);
+    --muted-foreground: var(--mamba-500);
     --popover: var(--base-white);
-    --popover-foreground: var(--chenin-950);
-    --primary: var(--chenin-900);
-    --primary-foreground: var(--chenin-50);
+    --popover-foreground: var(--mamba-950);
+    --primary: var(--mamba-900);
+    --primary-foreground: var(--mamba-50);
     --radius: var(--rounded-lg);
     --radius-md: var(--rounded-md);
     --radius-sm: var(--rounded);
-    --ring: var(--chenin-500);
-    --secondary: var(--chenin-100);
-    --secondary-foreground: var(--chenin-900);
+    --ring: var(--mamba-500);
+    --secondary: var(--mamba-100);
+    --secondary-foreground: var(--mamba-900);
 
     /* charts */
     --chart-1: #e76e4f;
@@ -87,41 +87,41 @@
     --chart-5: #f4a361;
 
     /* sidebar */
-    --sidebar-accent: var(--chenin-100);
-    --sidebar-accent-foreground: var(--chenin-900);
+    --sidebar-accent: var(--mamba-100);
+    --sidebar-accent-foreground: var(--mamba-900);
     --sidebar-background: var(--gray-50);
     --sidebar-border: var(--gray-200);
     --sidebar-foreground: var(--gray-700);
-    --sidebar-primary: var(--chenin-900);
-    --sidebar-primary-foreground: var(--chenin-50);
+    --sidebar-primary: var(--mamba-900);
+    --sidebar-primary-foreground: var(--mamba-50);
     --sidebar-ring: var(--gray-500);
 }
 
 .dark {
     /*== THEME: dark ==*/
     /* tokens */
-    --accent: var(--chenin-800);
-    --accent-foreground: var(--chenin-50);
-    --background: var(--chenin-950);
-    --border: var(--chenin-700);
-    --card: var(--chenin-950);
-    --card-foreground: var(--chenin-50);
+    --accent: var(--mamba-800);
+    --accent-foreground: var(--mamba-50);
+    --background: var(--mamba-950);
+    --border: var(--mamba-700);
+    --card: var(--mamba-950);
+    --card-foreground: var(--mamba-50);
     --destructive: var(--red-900);
-    --destructive-foreground: var(--chenin-50);
-    --foreground: var(--chenin-50);
-    --input: var(--chenin-700);
-    --muted: var(--chenin-800);
-    --muted-foreground: var(--chenin-400);
-    --popover: var(--chenin-950);
-    --popover-foreground: var(--chenin-50);
-    --primary: var(--chenin-50);
-    --primary-foreground: var(--chenin-900);
+    --destructive-foreground: var(--mamba-50);
+    --foreground: var(--mamba-50);
+    --input: var(--mamba-700);
+    --muted: var(--mamba-800);
+    --muted-foreground: var(--mamba-400);
+    --popover: var(--mamba-950);
+    --popover-foreground: var(--mamba-50);
+    --primary: var(--mamba-50);
+    --primary-foreground: var(--mamba-900);
     --radius: var(--rounded-lg);
     --radius-md: var(--rounded-md);
     --radius-sm: var(--rounded);
-    --ring: var(--chenin-400);
-    --secondary: var(--chenin-800);
-    --secondary-foreground: var(--chenin-50);
+    --ring: var(--mamba-400);
+    --secondary: var(--mamba-800);
+    --secondary-foreground: var(--mamba-50);
 
     /* charts */
     --chart-1: #2661d8;

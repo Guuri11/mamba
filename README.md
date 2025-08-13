@@ -1,6 +1,25 @@
-# Tauri + React + Typescript
 
-This template should help get you started developing with Tauri, React and Typescript in Vite.
+# Mamba
+
+Mamba es un asistente personal inteligente de escritorio, diseñado para ayudarte a organizar tareas, gestionar información y automatizar flujos de trabajo desde una interfaz moderna y eficiente. El objetivo del proyecto es ofrecer una experiencia de usuario fluida, integrando capacidades de IA para anticipar necesidades, responder preguntas y facilitar la productividad diaria.
+
+## Características principales
+
+- Asistente personal inteligente con IA
+- Interfaz de usuario moderna basada en React y Tauri
+- Integración con flujos de trabajo y automatizaciones
+- Soporte multilenguaje (i18n)
+- Comunicación eficiente entre frontend (TypeScript/React) y backend (Rust/Tauri)
+
+---
+- Asistente personal inteligente con IA
+- Interfaz de usuario moderna basada en React y Tauri
+- Integración con flujos de trabajo y automatizaciones
+- Soporte multilenguaje (i18n)
+- Comunicación eficiente entre frontend (TypeScript/React) y backend (Rust/Tauri)
+
+---
+
 
 ## Recommended IDE Setup
 
