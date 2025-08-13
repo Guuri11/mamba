@@ -12,15 +12,20 @@
 			"openAssistant": "Open Assistant",
 			"recentFiles": "Recent Files",
 			"calendar": "Calendar"
-		}
+		},
+        "assistant": {
+            "title": "Mamba Assistant",
+            "tip": "Ask me anything or let me help you get started.",
+            "invoke": "Open Assistant"
+	    }
 	},
     "assistant": {
-			"title": "Mamba Assistant",
-			"tip": "Ask me anything or let me help you get started.",
-			"invoke": "Open Assistant",
-            "input": {
-                "placeholder": "Type your message...",
-                "search": "Search"
-            }
-		}
+        "title": "Mamba Assistant",
+        "tip": "Ask me anything or let me help you get started.",
+        "invoke": "Open Assistant",
+        "input": {
+            "placeholder": "Type your message...",
+            "search": "Search"
+        }
+	}
 }

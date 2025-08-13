@@ -12,7 +12,12 @@
 			"openAssistant": "Abrir asistente",
 			"recentFiles": "Archivos recientes",
 			"calendar": "Calendario"
-		}
+		},
+        "assistant": {
+			"title": "Asistente Mamba",
+			"tip": "Pregúntame lo que quieras o deja que te ayude a empezar.",
+			"invoke": "Abrir asistente"
+	    }
 	},
     "assistant": {
 			"title": "Asistente Mamba",
@@ -22,7 +27,7 @@
                 "placeholder": "Escribe tu mensaje...",
                 "search": "Buscar"
             }
-		}
+	}
 }
 
 
