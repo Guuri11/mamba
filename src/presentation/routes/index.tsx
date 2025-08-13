@@ -2,9 +2,10 @@ import { createFileRoute } from "@tanstack/react-router";
 import { MambaSidebar } from "../components/mamba-sidebar";
 import { Button } from "../components/ui/button";
 import { useTranslation } from "react-i18next";
-import { UserCircle2, Sparkles, Calendar, ListTodo, Bot } from "lucide-react";
+import { UserCircle2, Bot } from "lucide-react";
 import { useWelcomeMessage } from "../hooks/use-welcome-message";
 import { RollingText } from "../components/ui/shadcn-io/rolling-text";
+import { AssistantFAB } from "../components/assistant-fab";
 
 export const Route = createFileRoute("/")({
   component: RouteComponent,
@@ -40,18 +41,7 @@ function RouteComponent() {
             </p>
           </div>
         </div>
-
-        {/* Assistant Panel Placeholder */}
-        <div className="bg-muted/60 rounded-xl p-6 flex items-center gap-4 shadow-sm">
-          <Bot className="w-8 h-8 text-primary" />
-          <div>
-            <div className="font-semibold">{t("home.assistant.title")}</div>
-            <div className="text-muted-foreground text-sm">{t("home.assistant.tip")}</div>
-          </div>
-          <Button variant="default" className="ml-auto">
-            {t("home.assistant.invoke")}
-          </Button>
-        </div>
+        <AssistantFAB />
       </div>
     </MambaSidebar>
   );
