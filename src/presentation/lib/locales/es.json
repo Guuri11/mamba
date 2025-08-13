@@ -2,6 +2,21 @@
 	"bootloader": {
 		"title": "Mamba",
 		"ready": "Listo",
-    "loading": "Arrancando sistema...\nCargando motor de visión..."
+		"loading": "Arrancando sistema...\nCargando motor de visión..."
+	},
+	"home": {
+		"welcome": "¡Bienvenido, {{name}}!",
+		"suggestion": "¿Qué te gustaría hacer hoy?",
+		"quickActions": {
+			"createTask": "Crear tarea",
+			"openAssistant": "Abrir asistente",
+			"recentFiles": "Archivos recientes",
+			"calendar": "Calendario"
+		},
+		"assistant": {
+			"title": "Asistente Mamba",
+			"tip": "Pregúntame lo que quieras o deja que te ayude a empezar.",
+			"invoke": "Abrir asistente"
+		}
 	}
 }

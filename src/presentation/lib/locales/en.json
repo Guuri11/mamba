@@ -2,6 +2,21 @@
 	"bootloader": {
 		"title": "Mamba",
 		"ready": "Ready",
-    "loading": "Starting system...\nLoading vision engine..."
+		"loading": "Starting system...\nLoading vision engine..."
+	},
+	"home": {
+		"welcome": "Welcome, {{name}}!",
+		"suggestion": "What would you like to do today?",
+		"quickActions": {
+			"createTask": "Create Task",
+			"openAssistant": "Open Assistant",
+			"recentFiles": "Recent Files",
+			"calendar": "Calendar"
+		},
+		"assistant": {
+			"title": "Mamba Assistant",
+			"tip": "Ask me anything or let me help you get started.",
+			"invoke": "Open Assistant"
+		}
 	}
 }
