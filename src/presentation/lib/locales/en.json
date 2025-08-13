@@ -12,11 +12,15 @@
 			"openAssistant": "Open Assistant",
 			"recentFiles": "Recent Files",
 			"calendar": "Calendar"
-		},
-		"assistant": {
+		}
+	},
+    "assistant": {
 			"title": "Mamba Assistant",
 			"tip": "Ask me anything or let me help you get started.",
-			"invoke": "Open Assistant"
+			"invoke": "Open Assistant",
+            "input": {
+                "placeholder": "Type your message...",
+                "search": "Search"
+            }
 		}
-	}
 }

@@ -1,8 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { MambaSidebar } from "../components/mamba-sidebar";
-import { Button } from "../components/ui/button";
 import { useTranslation } from "react-i18next";
-import { UserCircle2, Bot } from "lucide-react";
+import { UserCircle2 } from "lucide-react";
 import { useWelcomeMessage } from "../hooks/use-welcome-message";
 import { RollingText } from "../components/ui/shadcn-io/rolling-text";
 import { AssistantFAB } from "../components/assistant-fab";
