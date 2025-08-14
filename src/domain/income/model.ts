@@ -1,4 +1,4 @@
-export interface ExpenseProps {
+export interface IncomeProps {
     id: string;
     categoryId: string;
     amount: number;
@@ -7,7 +7,7 @@ export interface ExpenseProps {
     budgetId: string;
 }
 
-export class Expense {
+export class Income {
     readonly id: string;
     readonly categoryId: string;
     readonly amount: number;
@@ -15,7 +15,7 @@ export class Expense {
     readonly description?: string;
     readonly budgetId: string;
 
-    constructor(props: ExpenseProps) {
+    constructor(props: IncomeProps) {
         this.id = props.id;
         this.categoryId = props.categoryId;
         this.amount = props.amount;

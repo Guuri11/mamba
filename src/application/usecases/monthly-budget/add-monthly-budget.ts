@@ -3,11 +3,11 @@ import { logger } from "@infrastructure/logger/logger";
 import { MonthlyBudget } from "../../../domain/monthly-budget/model";
 import { MonthlyBudgetRepository } from "../../../domain/monthly-budget/repository";
 
-export class GetMonthlyBudgetDetail {
+export class AddMonthlyBudget {
     constructor(private readonly repo: MonthlyBudgetRepository) {}
 
-    async execute(id: string): Promise<MonthlyBudget | null> {
-        logger.info("monthly_budget.usecase.get_detail_called", { id });
-        return this.repo.getById(id);
+    async execute(budget: MonthlyBudget): Promise<void> {
+        logger.info("monthly_budget.usecase.add_called", { budget });
+        await this.repo.add(budget);
     }
 }

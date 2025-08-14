@@ -1,25 +1,9 @@
 {
-  "title": "Mamba App",
-  "menu": [
-    {
-      "title": "Dashboard",
-      "url": "/dashboard"
-    },
-      {
-        "title": "Monthly Budget",
-        "url": "/monthly-budget"
-      },
-    {
-      "title": "Tasks",
-      "url": "/tasks",
-      "subItems": [
-        { "title": "My Tasks", "url": "/tasks/my" },
-        { "title": "Team Tasks", "url": "/tasks/team" }
-      ]
-    },
-    {
-      "title": "Settings",
-      "url": "/settings"
-    }
-  ]
+    "title": "Mamba App",
+    "menu": [
+        {
+            "title": "Monthly Budget",
+            "url": "/monthly-budget"
+        }
+    ]
 }

@@ -6,6 +6,7 @@ export interface BudgetCategoryProps {
     actual: number;
     date?: string; // ISO string
     description?: string;
+    budgetId: string;
 }
 
 export class BudgetCategory {
@@ -15,6 +16,7 @@ export class BudgetCategory {
     readonly actual: number;
     readonly date?: string;
     readonly description?: string;
+    readonly budgetId: string;
 
     constructor(props: BudgetCategoryProps) {
         this.id = props.id;
@@ -23,6 +25,7 @@ export class BudgetCategory {
         this.actual = props.actual;
         this.date = props.date;
         this.description = props.description;
+        this.budgetId = props.budgetId;
     }
 
     get difference(): number {

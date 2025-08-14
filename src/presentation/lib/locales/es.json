@@ -37,7 +37,9 @@
         "detailTitle": "Presupuesto mensual de {{month}}",
         "initialBalance": "Saldo inicial",
         "finalBalance": "Saldo final",
-        "savings": "Ahorro / Pérdida"
+        "savings": "Ahorro / Pérdida",
+        "add": "Agregar presupuesto",
+        "addTitle": "Agregar presupuesto mensual"
     },
     "budgetCategory": {
         "comparisonTitle": "Previsto vs Real por categoría",
@@ -45,26 +47,55 @@
         "planned": "Previsto",
         "actual": "Real",
         "difference": "Diferencia",
-        "total": "Total"
+        "total": "Total",
+        "addCategory": "Agregar categoría de gasto",
+        "addExpenseCategory": "Agregar categoría de gasto",
+        "editExpenseCategory": "Editar categoría de gasto"
     },
-    "actions": "Acciones",
-    "edit": "Editar",
-    "delete": "Eliminar",
-    "addCategory": "Agregar categoría",
-    "addExpenseCategory": "Agregar categoría de gasto",
-    "addIncomeCategory": "Agregar categoría de ingreso",
-    "editExpenseCategory": "Editar categoría de gasto",
-    "editIncomeCategory": "Editar categoría de ingreso",
-    "deleteCategory": "Eliminar categoría",
-    "showOnlyDeviations": "Mostrar solo desviaciones importantes",
-    "deviationThreshold": "Desviación para alerta",
-    "confirmDelete": "¿Seguro que quieres eliminar esta categoría?",
     "incomeCategory": {
-        "comparisonTitle": "Ingresos previstos vs reales por categoría",
+        "comparisonTitle": "Previsto vs Real por ingreso",
         "category": "Categoría",
         "planned": "Previsto",
         "actual": "Real",
         "difference": "Diferencia",
-        "total": "Total"
-    }
+        "total": "Total",
+        "addCategory": "Agregar categoría de ingreso",
+        "addIncomeCategory": "Agregar categoría de ingreso",
+        "editIncomeCategory": "Editar categoría de ingreso"
+    },
+    "budget": {
+        "summaryTab": "Resumen",
+        "registerTab": "Registro",
+        "registerExpense": "Registrar gasto",
+        "registerIncome": "Registrar ingreso",
+        "registerTitle": "Registrar gasto",
+        "registerIncomeTitle": "Registrar ingreso",
+        "amountPositive": "El importe debe ser un número positivo",
+        "selectCategory": "Debe seleccionar una categoría",
+        "selectValidCategory": "Debe seleccionar una categoría válida",
+        "date": "Fecha",
+        "amount": "Importe",
+        "description": "Descripción",
+        "category": "Categoría",
+        "selectCategoryOption": "Seleccione una categoría",
+    "expense": "Gasto",
+    "income": "Ingreso",
+        "save": "Guardar",
+        "cancel": "Cancelar"
+    },
+    "deviation": {
+        "showOnlyDeviations": "Mostrar solo desviaciones importantes",
+        "deviationThreshold": "Desviación para alerta"
+    },
+    "actions": {
+        "title": "Acciones",
+        "save": "Guardar",
+        "cancel": "Cancelar",
+        "edit": "Editar",
+        "delete": "Eliminar"
+    },
+    "form": {
+        "requiredFields": "Todos los campos son obligatorios"
+    },
+    "confirmDelete": "¿Seguro que quieres eliminar esta categoría?"
 }
