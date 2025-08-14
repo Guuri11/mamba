@@ -13,7 +13,6 @@ interface MonthlyBudgetFormProps {
     const { t } = useTranslation();
     const [month, setMonth] = useState(initial.month || "");
     const [name, setName] = useState(initial.name || "");
-    const [initialBalance, setInitialBalance] = useState(initial.initialBalance?.toString() || "");
     const [error, setError] = useState("");
 
     // Helper to get month name from YYYY-MM
@@ -36,7 +35,7 @@ interface MonthlyBudgetFormProps {
         className="flex flex-col gap-4"
         onSubmit={e => {
           e.preventDefault();
-          if (!month || !name || !initialBalance) {
+          if (!month || !name) {
             setError(t('form.requiredFields', 'All fields are required'));
             return;
           }
@@ -45,8 +44,6 @@ interface MonthlyBudgetFormProps {
             month,
             name,
             total: 0, // Will be calculated elsewhere
-            initialBalance: Number(initialBalance),
-            finalBalance: Number(initialBalance), // Will be recalculated elsewhere
           });
         }}
       >
@@ -66,16 +63,6 @@ interface MonthlyBudgetFormProps {
             className="border rounded px-2 py-1 w-full bg-gray-100"
             value={name}
             readOnly
-            required
-          />
-        </div>
-        <div>
-          <label className="block text-sm font-medium mb-1">{t('monthlyBudget.initialBalance', 'Initial Balance')}</label>
-          <input
-            type="number"
-            className="border rounded px-2 py-1 w-full"
-            value={initialBalance}
-            onChange={e => setInitialBalance(e.target.value)}
             required
           />
         </div>

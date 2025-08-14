@@ -150,12 +150,6 @@ function RouteComponent() {
 
     if (loading || !budget) return <div>{t("monthlyBudget.loading")}</div>;
 
-    const initialBalance = budget.initialBalance;
-    const finalBalance = budget.finalBalance;
-    const savings = finalBalance - initialBalance;
-    const isPositive = savings >= 0;
-    const percent = (Math.abs(savings) / (initialBalance || 1)) * 100;
-
     // Totals for expense categories
     const totalPlanned = categories.reduce((sum, c) => sum + c.planned, 0);
     // Actual is now sum of all expenses for this budget
@@ -219,47 +213,8 @@ function RouteComponent() {
                             {t("monthlyBudget.detailTitle", { month: budget.name })}
                         </h1>
                         <div className="mb-8 grid grid-cols-1 md:grid-cols-3 gap-6 w-full">
-                    <div className="flex flex-col items-center">
-                        <span className="text-muted-foreground text-sm mb-1">
-                            {t("monthlyBudget.initialBalance")}
-                        </span>
-                        <span className="text-xl font-semibold">
-                            €{initialBalance.toLocaleString()}
-                        </span>
-                    </div>
-                    <div className="flex flex-col items-center">
-                        <span className="text-muted-foreground text-sm mb-1">
-                            {t("monthlyBudget.finalBalance")}
-                        </span>
-                        <span className="text-xl font-semibold">
-                            €{finalBalance.toLocaleString()}
-                        </span>
-                    </div>
-                    <div className="flex flex-col items-center">
-                        <span className="text-muted-foreground text-sm mb-1">
-                            {t("monthlyBudget.savings")}
-                        </span>
-                        <span
-                            className={`text-xl font-semibold ${isPositive ? "text-green-600" : "text-red-600"}`}
-                        >
-                            {isPositive ? "+" : "-"}€{Math.abs(savings).toLocaleString()}
-                        </span>
-                    </div>
                 </div>
                         <div className="mb-4">
-                    <div className="flex justify-between text-xs mb-1">
-                        <span>{t("monthlyBudget.initialBalance")}</span>
-                        <span>{t("monthlyBudget.finalBalance")}</span>
-                    </div>
-                    <div className="relative h-6 bg-muted rounded overflow-hidden">
-                        <div
-                            className={`absolute top-0 left-0 h-full ${isPositive ? "bg-green-500" : "bg-red-500"}`}
-                            style={{ width: `${Math.min(percent, 100)}%` }}
-                        />
-                        <div className="absolute inset-0 flex items-center justify-center text-xs font-mono">
-                            {isPositive ? `+${percent.toFixed(1)}%` : `-${percent.toFixed(1)}%`}
-                        </div>
-                    </div>
                 </div>
                         <div className="flex gap-8 w-full justify-between">
                     <div className="mb-8 flex-1 min-w-0">

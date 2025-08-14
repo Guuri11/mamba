@@ -35,8 +35,6 @@
         "month": "Mes",
         "total": "Total",
         "detailTitle": "Presupuesto mensual de {{month}}",
-        "initialBalance": "Saldo inicial",
-        "finalBalance": "Saldo final",
         "savings": "Ahorro / Pérdida",
         "add": "Agregar presupuesto",
         "addTitle": "Agregar presupuesto mensual"

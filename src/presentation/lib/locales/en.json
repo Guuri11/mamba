@@ -35,8 +35,6 @@
         "month": "Month",
         "total": "Total",
         "detailTitle": "Monthly Budget for {{month}}",
-        "initialBalance": "Initial Balance",
-        "finalBalance": "Final Balance",
         "savings": "Savings / Loss",
         "add": "Add Budget",
         "addTitle": "Add Monthly Budget"

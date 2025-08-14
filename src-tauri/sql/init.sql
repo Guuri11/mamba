@@ -1,9 +1,7 @@
 CREATE TABLE IF NOT EXISTS monthly_budgets (
   id VARCHAR(64) PRIMARY KEY,
   name VARCHAR(255) NOT NULL,
-  month VARCHAR(7) NOT NULL,
-  initialBalance DOUBLE PRECISION NOT NULL,
-  finalBalance DOUBLE PRECISION NOT NULL
+  month VARCHAR(7) NOT NULL
 );
 
 -- Expenses table

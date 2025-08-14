@@ -62,7 +62,6 @@ function RouteComponent() {
                 >
                   <div className="font-semibold">{budget.name}</div>
                   <div className="text-sm text-muted-foreground">{budget.month}</div>
-                  <div className="text-lg font-mono">${budget.total?.toLocaleString() ?? 0}</div>
                 </Link>
                 <Button
                   size="icon"
