@@ -1,24 +1,24 @@
 {
-	"bootloader": {
-		"title": "Mamba",
-		"ready": "Ready",
-		"loading": "Starting system...\nLoading vision engine..."
-	},
-	"home": {
-		"welcome": "Welcome, {{name}}!",
-		"suggestion": "What would you like to do today?",
-		"quickActions": {
-			"createTask": "Create Task",
-			"openAssistant": "Open Assistant",
-			"recentFiles": "Recent Files",
-			"calendar": "Calendar"
-		},
+    "bootloader": {
+        "title": "Mamba",
+        "ready": "Ready",
+        "loading": "Starting system...\nLoading vision engine..."
+    },
+    "home": {
+        "welcome": "Welcome, {{name}}!",
+        "suggestion": "What would you like to do today?",
+        "quickActions": {
+            "createTask": "Create Task",
+            "openAssistant": "Open Assistant",
+            "recentFiles": "Recent Files",
+            "calendar": "Calendar"
+        },
         "assistant": {
             "title": "Mamba Assistant",
             "tip": "Ask me anything or let me help you get started.",
             "invoke": "Open Assistant"
-	    }
-	},
+        }
+    },
     "assistant": {
         "title": "Mamba Assistant",
         "tip": "Ask me anything or let me help you get started.",
@@ -27,13 +27,44 @@
             "placeholder": "Type your message...",
             "search": "Search"
         }
-	}
-	,
-	"monthlyBudget": {
-		"title": "Monthly Budgets",
-		"loading": "Loading...",
-		"name": "Name",
-		"month": "Month",
-		"total": "Total"
-	}
+    },
+    "monthlyBudget": {
+        "title": "Monthly Budgets",
+        "loading": "Loading...",
+        "name": "Name",
+        "month": "Month",
+        "total": "Total",
+        "detailTitle": "Monthly Budget for {{month}}",
+        "initialBalance": "Initial Balance",
+        "finalBalance": "Final Balance",
+        "savings": "Savings / Loss"
+    },
+    "budgetCategory": {
+        "comparisonTitle": "Planned vs Actual by Category",
+        "category": "Category",
+        "planned": "Planned",
+        "actual": "Actual",
+        "difference": "Difference",
+        "total": "Total"
+    },
+    "actions": "Actions",
+    "edit": "Edit",
+    "delete": "Delete",
+    "addCategory": "Add Category",
+    "addExpenseCategory": "Add Expense Category",
+    "addIncomeCategory": "Add Income Category",
+    "editExpenseCategory": "Edit Expense Category",
+    "editIncomeCategory": "Edit Income Category",
+    "deleteCategory": "Delete Category",
+    "showOnlyDeviations": "Show only important deviations",
+    "deviationThreshold": "Deviation alert threshold",
+    "confirmDelete": "Are you sure you want to delete this category?",
+    "incomeCategory": {
+        "comparisonTitle": "Planned vs Actual Income by Category",
+        "category": "Category",
+        "planned": "Planned",
+        "actual": "Actual",
+        "difference": "Difference",
+        "total": "Total"
+    }
 }

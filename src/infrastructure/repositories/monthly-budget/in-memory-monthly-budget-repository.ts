@@ -2,9 +2,30 @@ import { MonthlyBudget, MonthlyBudgetProps } from "../../../domain/monthly-budge
 import { MonthlyBudgetRepository } from "../../../domain/monthly-budget/repository";
 
 const MOCK_BUDGETS: MonthlyBudgetProps[] = [
-    { id: "1", month: "2025-08", name: "August 2025", total: 2000 },
-    { id: "2", month: "2025-07", name: "July 2025", total: 1800 },
-    { id: "3", month: "2025-06", name: "June 2025", total: 1750 },
+    {
+        id: "1",
+        month: "2025-08",
+        name: "August 2025",
+        total: 2000,
+        initialBalance: 1200,
+        finalBalance: 2000,
+    },
+    {
+        id: "2",
+        month: "2025-07",
+        name: "July 2025",
+        total: 1800,
+        initialBalance: 1000,
+        finalBalance: 1800,
+    },
+    {
+        id: "3",
+        month: "2025-06",
+        name: "June 2025",
+        total: 1750,
+        initialBalance: 900,
+        finalBalance: 1750,
+    },
 ];
 
 export class InMemoryMonthlyBudgetRepository implements MonthlyBudgetRepository {

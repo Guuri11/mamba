@@ -1,41 +1,70 @@
 {
-	"bootloader": {
-		"title": "Mamba",
-		"ready": "Listo",
-		"loading": "Arrancando sistema...\nCargando motor de visión..."
-	},
-	"home": {
-		"welcome": "¡Bienvenido, {{name}}!",
-		"suggestion": "¿Qué te gustaría hacer hoy?",
-		"quickActions": {
-			"createTask": "Crear tarea",
-			"openAssistant": "Abrir asistente",
-			"recentFiles": "Archivos recientes",
-			"calendar": "Calendario"
-		},
+    "bootloader": {
+        "title": "Mamba",
+        "ready": "Listo",
+        "loading": "Arrancando sistema...\nCargando motor de visión..."
+    },
+    "home": {
+        "welcome": "¡Bienvenido, {{name}}!",
+        "suggestion": "¿Qué te gustaría hacer hoy?",
+        "quickActions": {
+            "createTask": "Crear tarea",
+            "openAssistant": "Abrir asistente",
+            "recentFiles": "Archivos recientes",
+            "calendar": "Calendario"
+        },
         "assistant": {
-			"title": "Asistente Mamba",
-			"tip": "Pregúntame lo que quieras o deja que te ayude a empezar.",
-			"invoke": "Abrir asistente"
-	    }
-	},
+            "title": "Asistente Mamba",
+            "tip": "Pregúntame lo que quieras o deja que te ayude a empezar.",
+            "invoke": "Abrir asistente"
+        }
+    },
     "assistant": {
-			"title": "Asistente Mamba",
-			"tip": "Pregúntame lo que quieras o deja que te ayude a empezar.",
-			"invoke": "Abrir asistente",
-            "input": {
-                "placeholder": "Escribe tu mensaje...",
-                "search": "Buscar"
-            }
-	}
-	,
-	"monthlyBudget": {
-		"title": "Presupuestos mensuales",
-		"loading": "Cargando...",
-		"name": "Nombre",
-		"month": "Mes",
-		"total": "Total"
-	}
+        "title": "Asistente Mamba",
+        "tip": "Pregúntame lo que quieras o deja que te ayude a empezar.",
+        "invoke": "Abrir asistente",
+        "input": {
+            "placeholder": "Escribe tu mensaje...",
+            "search": "Buscar"
+        }
+    },
+    "monthlyBudget": {
+        "title": "Presupuestos mensuales",
+        "loading": "Cargando...",
+        "name": "Nombre",
+        "month": "Mes",
+        "total": "Total",
+        "detailTitle": "Presupuesto mensual de {{month}}",
+        "initialBalance": "Saldo inicial",
+        "finalBalance": "Saldo final",
+        "savings": "Ahorro / Pérdida"
+    },
+    "budgetCategory": {
+        "comparisonTitle": "Previsto vs Real por categoría",
+        "category": "Categoría",
+        "planned": "Previsto",
+        "actual": "Real",
+        "difference": "Diferencia",
+        "total": "Total"
+    },
+    "actions": "Acciones",
+    "edit": "Editar",
+    "delete": "Eliminar",
+    "addCategory": "Agregar categoría",
+    "addExpenseCategory": "Agregar categoría de gasto",
+    "addIncomeCategory": "Agregar categoría de ingreso",
+    "editExpenseCategory": "Editar categoría de gasto",
+    "editIncomeCategory": "Editar categoría de ingreso",
+    "deleteCategory": "Eliminar categoría",
+    "showOnlyDeviations": "Mostrar solo desviaciones importantes",
+    "deviationThreshold": "Desviación para alerta",
+    "confirmDelete": "¿Seguro que quieres eliminar esta categoría?",
+    "incomeCategory": {
+        "comparisonTitle": "Ingresos previstos vs reales por categoría",
+        "category": "Categoría",
+        "planned": "Previsto",
+        "actual": "Real",
+        "difference": "Diferencia",
+        "total": "Total"
+    }
 }
-
-
