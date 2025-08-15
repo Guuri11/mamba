@@ -11,12 +11,14 @@ import {
   SidebarMenuButton,
   SidebarMenuItem,
   SidebarRail,
+  SidebarFooter,
 } from "~/components/ui/sidebar"
 
 
 
 import { NavigationBar, NavigationMenuItem } from "../../domain/navigation/model";
 import { Link } from "@tanstack/react-router";
+import { VirtualMouseToggle } from "./virtual-mouse-toggle";
 
 export interface AppSidebarProps extends React.ComponentProps<typeof Sidebar> {
   navigation: NavigationBar;
@@ -50,6 +52,9 @@ export function AppSidebar({ navigation, ...props }: AppSidebarProps) {
           </SidebarGroupContent>
         </SidebarGroup>
       </SidebarContent>
+      <SidebarFooter>
+        <VirtualMouseToggle />
+      </SidebarFooter>
       <SidebarRail />
     </Sidebar>
   );

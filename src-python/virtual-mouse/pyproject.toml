@@ -1,0 +1,21 @@
+[project]
+name = "virtual-mouse"
+version = "0.1.0"
+description = ""
+authors = [{ name = "guuri11", email = "sergio.gurillo11@gmail.com" }]
+readme = "README.md"
+requires-python = ">=3.10,<3.13"
+dependencies = [
+    "numpy (==1.26.4)",
+    "opencv-python (==4.9.0.80)",
+    "mediapipe (>=0.10.21,<0.11.0)",
+    "pyautogui (>=0.9.54,<0.10.0)",
+]
+
+[tool.poetry]
+packages = [{ include = "virtual_mouse", from = "src" }]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"

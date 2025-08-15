@@ -1,7 +1,5 @@
-
 import * as React from "react";
 import { createRootRoute, Outlet } from "@tanstack/react-router";
-import { TanStackRouterDevtools } from "@tanstack/react-router-devtools";
 import { Bootloader } from "../components/bootloader";
 
 
@@ -18,7 +16,6 @@ function RootWithBootloader() {
     return (
         <>
             <Outlet />
-            <TanStackRouterDevtools />
         </>
     );
 }
